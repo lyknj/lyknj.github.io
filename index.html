@@ -4,104 +4,67 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Your Name</title>
-<style>
-  * { margin: 0; padding: 0; box-sizing: border-box; }
-  body {
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: #fafafa;
-    color: #222;
-    line-height: 1.6;
-  }
-  header {
-    padding: 80px 20px 40px;
-    text-align: center;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-  }
-  header h1 { font-size: 2.5rem; margin-bottom: 8px; }
-  header p { color: #666; font-size: 1.1rem; }
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 24px;
-    padding: 16px;
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    position: sticky;
-    top: 0;
-  }
-  nav a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
-  }
-  nav a:hover { color: #555; }
-  section {
-    max-width: 700px;
-    margin: 0 auto;
-    padding: 60px 20px;
-  }
-  section h2 {
-    font-size: 1.6rem;
-    margin-bottom: 16px;
-    border-bottom: 2px solid #333;
-    display: inline-block;
-    padding-bottom: 4px;
-  }
-  .card {
-    background: #fff;
-    border: 1px solid #eee;
-    border-radius: 8px;
-    padding: 20px;
-    margin-top: 16px;
-  }
-  .card h3 { margin-bottom: 6px; }
-  .card p { color: #555; font-size: 0.95rem; }
-  footer {
-    text-align: center;
-    padding: 30px;
-    color: #999;
-    font-size: 0.9rem;
-  }
-  a.contact-link {
-    color: #333;
-    text-decoration: underline;
-  }
-</style>
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header>
   <h1>Your Name</h1>
   <p>College Student · Your Major, Your School</p>
+  <div class="header-links">
+    <a href="mailto:you@example.com">Email</a>
+    <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+  </div>
 </header>
 
 <nav>
   <a href="#about">About</a>
+  <a href="#skills">Skills</a>
   <a href="#projects">Projects</a>
   <a href="#contact">Contact</a>
 </nav>
 
 <section id="about">
   <h2>About Me</h2>
-  <p>Hi! I'm a student studying Environmental Engineering Science at UC Berkeley. I'm interested in sustainable technology. This site is a work in progress — check back soon for updates!</p>
+  <p>Hi! I'm a student studying [your major] at [your school], graduating in [year]. I'm interested in [a couple interests]. Outside of class, I enjoy [hobby or two].</p>
+</section>
+
+<section id="skills">
+  <h2>Skills</h2>
+  <div class="skills-grid">
+    <span class="skill-tag">Python</span>
+    <span class="skill-tag">JavaScript</span>
+    <span class="skill-tag">SQL</span>
+    <span class="skill-tag">Excel</span>
+    <span class="skill-tag">Public Speaking</span>
+    <span class="skill-tag">Add More</span>
+  </div>
 </section>
 
 <section id="projects">
   <h2>Projects</h2>
   <div class="card">
     <h3>Project Title</h3>
-    <p>A short description of what this project is and what you used to build it.</p>
+    <p>A short description of what this project is, what problem it solved, and what tools you used.</p>
+    <a class="project-link" href="#" target="_blank">View project →</a>
   </div>
   <div class="card">
     <h3>Another Project</h3>
-    <p>Short description here too.</p>
+    <p>Short description here too. What was your role and what did you learn?</p>
+    <a class="project-link" href="#" target="_blank">View project →</a>
+  </div>
+  <div class="card">
+    <h3>A Third Project</h3>
+    <p>Even a class project or hackathon entry counts here.</p>
+    <a class="project-link" href="#" target="_blank">View project →</a>
   </div>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  <p>Email me at <a class="contact-link" href="anna_luo@berkeley.edu">anna_luo@berkeley.edu</a></p>
+  <p>Feel free to reach out — I'm always open to chatting about opportunities, projects, or just saying hi.</p>
+  <a class="button" href="mailto:you@example.com">Email Me</a>
 </section>
 
 <footer>
